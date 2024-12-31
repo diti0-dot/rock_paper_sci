@@ -2,14 +2,53 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 style="text-align: center; padding-top: 200px;">
-        Let's play
-    </h1>
-    <h2 style="text-align: center; padding-top: 100px;">
-      open the console to play the game
-    </h2>
+    <header>
+        <h1 div ="header">Rock Paper Scissors</h1>
+    </header>
+    <div class="cards">
+        <div class="all">
+            <h2> YOU </h2>
+            <button id="rock-button">Rock</button>
+            <button id="paper-button">Paper</button>
+            <button id="scissors-button">Scissors</button>
+        </div>
+        <div class="all">
+            <div class="choice">
+            <div class="you">
+                <h2>YOU</h2>
+                <div id="choice-image"></div>
+            </div>
+            <div class="comp">
+                <h2>COMPUTER</h2>
+                <div id="comp-image"></div>
+            </div>
+            </div>
+        </div>
+        <div class="all">
+            <h2>COMPUTER</h2>
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissors</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>SCORE</p>
+        <div class="scores">
+            <div class="youScr">
+        <h3>You:</h3>
+        <p id="Your">0</p>
+    </div>
+    <div class="compScr">
+        <h3>Computer:</h3>
+        <p id="Compp">0</p>
+    </div>
+    </div>
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>
+
