@@ -1,5 +1,5 @@
 const rockImg = "images/rock.png";
-const paperImg = "paper.png";
+const paperImg = "images/paper.png";
 const scissImg = "sciss.png";
 
 const imageContainer = document.getElementById('choice-image');
