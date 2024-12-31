@@ -17,20 +17,15 @@ document.getElementById('paper-button').addEventListener('click', () => handleUs
 document.getElementById('scissors-button').addEventListener('click', () => handleUserChoice('scissors'));
 
 function handleUserChoice(userChoice) {
-    // Show user's choice
     showImage(userChoice);
-
-    // Get and display computer's choice
     const computerChoice = getComputerChoice();
     showCompImg(computerChoice);
-
-    // Determine the result and update the score
     const result = getResult(userChoice, computerChoice);
     updateScore(result);
 }
 
 function showImage(choice) {
-    imageContainer.innerHTML = ''; // Clear the container before appending a new image
+    imageContainer.innerHTML = ''; 
 
     const img = document.createElement('img');
 
@@ -68,8 +63,8 @@ function showCompImg(computerChoice) {
         img.alt = "scissors";
     }
 
-    compImg.innerHTML = ''; // Clear previous computer choice image
-    compImg.appendChild(img); // Append the image to the container
+    compImg.innerHTML = ''; 
+    compImg.appendChild(img); 
 }
 
 // Determine the result of the game
@@ -112,8 +107,8 @@ function checkEndGame() {
             message = `It's a draw! Both scored ${userScore}. 😮`;
         }
 
-        alert(message); // Display the winner
-        resetGame();    // Reset the game for another round
+        alert(message); 
+        resetGame();    
     }
 }
 
