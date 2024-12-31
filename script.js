@@ -1,4 +1,4 @@
-const rockImg = "rock.png";
+const rockImg = "images/rock.png";
 const paperImg = "paper.png";
 const scissImg = "sciss.png";
 
